@@ -1,0 +1,81 @@
+body {
+    color: rgb(36, 36, 128);
+}
+
+.inner,
+.contaner {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.tit {
+    line-height: 1;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.sec {
+    padding: 100px 0;
+}
+
+.header {
+    line-height: 100px;
+}
+
+.header h1 {
+    font-size: 0;
+}
+
+.header .inner {
+    justify-content: space-between;
+}
+
+.header .gnb>ul {
+    gap: 80px;
+}
+
+.header .gnb>ul>li {
+    position: relative;
+}
+
+.header .gnb>ul>li~li::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    width: 3px;
+    height: 16px;
+    background: tomato;
+    transform: translate(0, -50%);
+}
+
+.mainVisual {
+    position: relative;
+    height: 850px;
+    background: url(./main02.jpg) no-repeat center center/cover;
+
+}
+
+.mainVisual .inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mainVisual .inner h2 {
+    font-size: 80px;
+    font-weight: 700;
+    color: #fff;
+    margin: 0 0 35px 0;
+}
+
+.mainVisual .inner p {
+    font-size: 15px;
+    font-weight: 300;
+    color: #fff;
+    line-height: 25px;
+}
